@@ -7,7 +7,7 @@
   <body>
       <header>
           <nav>
-            <a href="index.html">
+            <a href="index.html" aria-label="На главную страницу">
               <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
             </a>
             <ul>
@@ -19,7 +19,7 @@
             </ul>
             <ul>
               <li>
-                <button type="button">Войти</button>
+                <button type="button">Вход</button>
               </li>
             </ul>
           </nav>
@@ -88,9 +88,9 @@
             <div>
               <p>Давайте дружить!</p>
               <ul>
-                <li><a href="#">Вконтакте</a></li>
-                <li><a href="#">Фейсбук</a></li>
-                <li><a href="#">Инстаграм</a></li>
+                <li><a href="#" aria-label="Барбершоп «Бородинский» во Вконтакте"><img src="img/vk.svg" alt="Логотип Вконтакте"></a></li>
+                <li><a href="#" aria-label="Барбершоп «Бородинский» в Фейсбук"><img src="img/facebook.svg" alt="Логотип фейсбук"></a></li>
+                <li><a href="#" aria-label="Барбершоп «Бородинский» в Инстаграм"><img src="img/instagram.svg" alt="Логотип Инстаграм"></a></li>
               </ul>
             </div>
             <div>
@@ -103,9 +103,35 @@
 
           <section>
               <h2>Личный кабинет</h2>
-              <p>Введите свой логин и пароль.</p>
-              <!-- Здесь будет форма -->
+              <p>Введите пожалуйста свой логин и пароль</p>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label for="user-login" class="visually-hidden">Логин</label>
+                    <input id="user-login" type="text" name="login" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label for="user-password" class="visually-hidden">Пароль</label>
+                  <input id="user-password" type="password" name="password" placeholder="••••••••">
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="remember" checked>
+                    Запомните меня
+                  </label>
+                  <a href="#">Я забыл пароль!</a>
+                </p>
+                <button type="submit">Войти</button>
+              </form>
+
               <button type="button">Закрыть</button>
+            </section>
+
+            <section>
+              <h2>Как до нас добраться</h2>
+              <p>
+                <img src="img/map.png" width="780" height="560" alt="Офис компани по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+              </p>
+                      <button type="button">Закрыть</button>
             </section>
     </body>
 </html>
