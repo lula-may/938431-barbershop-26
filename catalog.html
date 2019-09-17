@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп.Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-      <header>
-          <nav>
-            <a href="index.html" aria-label="На главную страницу">
+  <body class="inner-page">
+      <header class="inner-header">
+          <nav class="inner-header">
+            <a class="inner-header-logo" href="index.html" aria-label="На главную страницу">
               <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
             </a>
-            <ul>
+            <ul class="site-navigation">
               <li><a href="info.html">Информация</a></li>
               <li><a href="news.html">Новости</a></li>
               <li><a href="price.html">Прайс-лист</a></li>
@@ -19,7 +22,7 @@
             </ul>
             <ul>
               <li>
-                <button type="button">Вход</button>
+                <a class="login-link" href="login.html">Вход</a>
               </li>
             </ul>
           </nav>
