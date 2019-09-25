@@ -9,27 +9,25 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <header class="inner-header">
-      <nav class="inner-navigation">
-        <a class="inner-header-logo" href="index.html" aria-label="На главную страницу">
+    <header class="main-header">
+      <nav class="main-navigation container">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
-          <li class="active"><a>Магазин</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li>
-            <a class="login-link" href="login.html">Вход</a>
-          </li>
+          <li><a class="login-link" href="login.html">Вход</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="inner-container">
+    <main class="container">
       <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
@@ -37,76 +35,80 @@
         <li><a href="#">Средства для ухода</a></li>
         <li>Набор для путешествий «Baxter of California»</li>
       </ul>
-      <div class="product-photoes">
-        <h2 class="visually-hidden">Изображения товара</h2>
-        <p class="product-photo-full">
-          <img src="img/product-large-1.jpg" width="460" height="500"
-            alt="Фото всего набора">
-        </p>
-        <ul class="product-photo-preview">
-          <li><img src="img/product-small-1.jpg" width="140" height="149"
-            alt="Фото в анфас">
-          </li>
-          <li><img src="img/product-small-2.jpg" width="140" height="149"
-            alt="Фото в профиль">
-          </li>
-          <li><img src="img/product-small-3.jpg" width="140" height="149"
-            alt="Фото всего набора">
-          </li>
-        </ul>
-      </div>
-      <div class="product-info">
-        <h2 class="visually-hidden">Описание товара</h2>
-        <div class="product-description">
-          <p class="product-availability">Есть в наличии</p>
-          <p class="product-article">Артикул Dexter-AE</p>
-        </div>
-        <p class="product-text">Travel Kit – необходимый аксессуар во время любого
-          путешествия. В аккуратной кожаной сумке находится
-          все, что нужно для бритья и ухода за кожей во время
-          рабочей поездки или отдыха: средство для умывания,
-          увлажняющий крем, крем для бритья, крем после
-          бритья, шампунь. Набор также может стать отличным
-          подарком.
-        </p>
-        <p class="product-price">
-          <b>2 900 ₽</b>
-          <a class="button" href="#">Купить</a>
-        </p>
-        <h3>В набор входят:</h3>
-        <ul class="product-components" >
-          <li>Средство для умывания (50 мл)</li>
-          <li>Увлажняющий крем (50 мл)</li>
-          <li>Крем для бритья (50 мл)</li>
-          <li>Крем после бритья, шампунь (50 мл)</li>
-          <li>Удобная кожаная косметичка</li>
-        </ul>
-      </div>
-    </main>
-    <footer class="inner-footer">
-      <p class="footer-contacts">
-        Барбершоп «Бородинский»
-        Адрес: г. Санкт-Петербург, Б. Конюшенная,
-        д. 19/8<br>
-        <a href="map.html">Как нас найти?</a><br>
-        Телефон: +7 (812) 666-02-66
-      </p>
-      <div class="footer-social">
-        <p>Давайте дружить!</p>
-        <ul>
-          <li><a class="social-button" href="#" aria-label="Барбершоп «Бородинский» во Вконтакте">Вконтакте</a></li>
-          <li><a class="social-button" href="#" aria-label="Барбершоп «Бородинский» в Фейсбук">фейсбук</a></li>
-          <li><a class="social-button" href="#" aria-label="Барбершоп «Бородинский» в Инстаграм">Инстаграм</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <p>
-          Разработано:
-          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-        </p>
-      </div>
-    </footer>
+      <div class="catalog-columns">
+        <div class="product-photoes">
+            <!-- <h2 class="visually-hidden">Изображения товара</h2> -->
+            <p class="product-photo-full">
+                <img src="img/product-large-1.jpg" width="460" height="500"
+                  alt="Фото всего набора">
+              </p>
 
+              <ul class="product-photo-preview">
+                <li><img src="img/product-small-1.jpg" width="140" height="149"
+                  alt="Фото в анфас">
+                </li>
+                <li><img src="img/product-small-2.jpg" width="140" height="149"
+                  alt="Фото в профиль">
+                </li>
+                <li><img src="img/product-small-3.jpg" width="140" height="149"
+                  alt="Фото всего набора">
+                </li>
+              </ul>
+          </div>
+          <div class="product-info">
+            <!-- <h2 class="visually-hidden">Описание товара</h2> -->
+            <div class="product-description">
+              <p class="product-availability">Есть в наличии</p>
+              <p class="product-article">Артикул Dexter-AE</p>
+            </div>
+            <p class="product-text">
+              Travel Kit – необходимый аксессуар во время любого
+              путешествия. В аккуратной кожаной сумке находится
+              все, что нужно для бритья и ухода за кожей во время
+              рабочей поездки или отдыха: средство для умывания,
+              увлажняющий крем, крем для бритья, крем после
+              бритья, шампунь. Набор также может стать отличным
+              подарком.
+            </p>
+            <p class="product-price">
+              <b>2 900 ₽</b>
+              <a class="button" href="#">Купить</a>
+            </p>
+            <h3>В набор входят:</h3>
+            <ul class="product-components" >
+              <li>Средство для умывания (50 мл)</li>
+              <li>Увлажняющий крем (50 мл)</li>
+              <li>Крем для бритья (50 мл)</li>
+              <li>Крем после бритья, шампунь (50 мл)</li>
+              <li>Удобная кожаная косметичка</li>
+            </ul>
+          </div>
+
+      </div>
+
+      </main>
+      <footer class="main-footer">
+        <div class="container">
+          <p class="footer-contacts">
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            <a href="map.html">Как нас найти?</a><br>
+            Телефон: +7 (812) 666-02-66
+          </p>
+          <div class="footer-social">
+            <b>Давайте дружить!</b>
+            <ul>
+              <li><a class="social-button" href="#">Вконтакте</a></li>
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul>
+          </div>
+          <p class="footer-copyright">
+            <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+          </p>
+        </div>
+      </footer>
+        <!--
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
@@ -132,5 +134,7 @@
 
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+
+ -->
   </body>
 </html>
